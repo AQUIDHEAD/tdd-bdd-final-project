@@ -67,7 +67,6 @@ class Product(db.Model):
     This version uses a relational database for persistence which is hidden
     from us by SQLAlchemy's object relational mappings (ORM)
     """
-
     ##################################################
     # Table Schema
     ##################################################
@@ -79,7 +78,6 @@ class Product(db.Model):
     category = db.Column(
         db.Enum(Category), nullable=False, server_default=(Category.UNKNOWN.name)
     )
-
     ##################################################
     # INSTANCE METHODS
     ##################################################
